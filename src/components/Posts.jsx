@@ -12,8 +12,9 @@ export class Posts extends React.Component {
     return (
       <ul className="list-unstyled">
       {this.props.posts.map( post =>
-        <Post key={post.id} title={post.title}
-              body={post.body} />
+        <Post key={post.get('id')} title={post.get('title')}
+              body={post.get('body')}
+              created={post.get('created')} />
       )}
       </ul>
     );

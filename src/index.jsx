@@ -14,10 +14,6 @@ const initialState = Map({
 
 const store = configureStore(initialState);
 
-// store.dispatch(configure({
-//   apiUrl: "http://api.lark.local"
-// }));
-
 store.dispatch({type: 'SET_STATE', newState: initialState});
 
 
