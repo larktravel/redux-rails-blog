@@ -6,6 +6,7 @@ import {List, Map, fromJS} from 'immutable';
 
 import App from './components/App';
 
+// import './react-calendar.scss'
 
 const initialState = Map({
   posts: [] ,
@@ -15,6 +16,7 @@ const initialState = Map({
 const store = configureStore(initialState);
 
 store.dispatch({type: 'SET_STATE', newState: initialState});
+
 
 
 ReactDOM.render(

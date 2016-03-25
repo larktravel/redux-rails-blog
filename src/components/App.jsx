@@ -5,6 +5,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import {loadPosts, clearPosts, createPost} from '../action_creators'
 import {Posts} from './Posts'
 
+import DatePicker from './DatePicker'
+
 export class App extends React.Component {
   constructor(props){
     super(props);
@@ -32,6 +34,9 @@ export class App extends React.Component {
           </a>
         </h2>
         <Posts posts={this.props.posts} />
+
+        <DatePicker/>
+
       </div>
 
     );
